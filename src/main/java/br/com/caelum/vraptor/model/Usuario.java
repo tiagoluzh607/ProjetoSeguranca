@@ -1,17 +1,18 @@
 package br.com.caelum.vraptor.model;
 
-public class Cliente {
+public class Usuario {
 	
 	int id;
 	String nome;
-	String foto;
+	String senha;
 	
-	public Cliente(int id, String nome, String foto) {
+	
+	public Usuario(int id, String nome, String senha) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.foto = foto;
+		this.senha = senha;
 	}
 	
-	
+
 }
