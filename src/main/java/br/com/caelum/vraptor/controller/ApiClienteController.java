@@ -7,6 +7,7 @@ import javax.inject.Inject;
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Result;
+import br.com.caelum.vraptor.annotation.ApiSeguro;
 import br.com.caelum.vraptor.dao.ClienteDAO;
 import br.com.caelum.vraptor.model.Cliente;
 import br.com.caelum.vraptor.model.Usuario;
@@ -17,6 +18,7 @@ public class ApiClienteController {
 
 	@Inject Result result;
 	
+	@ApiSeguro
 	@Get("/api/clientes")
 	public void buscaClientes() {
 		

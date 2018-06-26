@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/06/2018, 17:16:52
+    Author     : tiago
+*/
+
+.painel-login{
+    padding: 3ch;
+    border-radius: 20px;
+    background-color: #000000b8;
+}
+
+.center{
+    margin:auto;
+}
+
+form input{
+    margin-bottom: 1ch;
+}
+
+input:focus{
+	    border-color: #3dd29b !important;
+	    box-shadow: 0 0 0 0.2rem rgb(66, 220, 163) !important;
+}
+
+input::selection {
+    background: #3dd29b !important;
+    color: white;
+}
+
+.section{
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white; 
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.section-clientes{
+    background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.section-usuarios{
+    
+}
+
+.div-clientes{
+    padding: 5%;
+}
+
+.cartao{
+		border-radius: 50px !important;
+        background-color: #00000096;
+        padding: 1ch;
+}
+
+.card-img-top{
+	border-radius: 40px !important;
+}
+
+.portfolio-item{
+    margin-bottom: 2ch;
+}
+
+h2{
+    margin-bottom: 5ch;
+}
