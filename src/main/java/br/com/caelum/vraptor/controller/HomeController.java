@@ -44,7 +44,12 @@ public class HomeController {
 		result.include("clienteList", clienteDAO.SelectAll());
 		
 		if(usuario.getPermissao().equals("administrador")) {
-			result.include("usuarioList", usuarioDAO.SelectAll());
+			ArrayList<Usuario> usuarios = usuarioDAO.SelectAll();
+			for (Usuario user : usuarios) {
+				user.setSenha("*****");
+			}
+			
+			result.include("usuarioList", usuarios);
 		}
 		
 		

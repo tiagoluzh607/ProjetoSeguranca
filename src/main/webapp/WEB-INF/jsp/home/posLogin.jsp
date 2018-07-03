@@ -16,7 +16,7 @@ and open the template in the editor.
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Seguranca de Software</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../layout/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,9 +50,11 @@ and open the template in the editor.
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#clientes">Clientes</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#usuarios">Usuarios</a>
-            </li>
+            <c:if test="${not empty usuarioList}">
+	            <li class="nav-item">
+	              <a class="nav-link js-scroll-trigger" href="#usuarios">Usuarios</a>
+	            </li>
+            </c:if>
           </ul>
         </div>
       </div>
